@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+
+// color varialbes
+
+$light-grey: #e0e5e5;
+$black: #0f0f0f;
+$orange: #ff8600;
+$primary-blue: #476c9b;
+$white: #ffffff;
+$gray: #6b7680;
+$red: #f21b3f;
+$yellow-brand: #f9b11c;
+$pink: #e65f99;
+$purple: #551a8b;
+
+// font uses
+
+$main-font: "Gilroy", sans-serif;
+$heading-font: "Playfair Display", serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.project-details-section {
+    padding: 2rem 8%;
+
+    .all-content-prdt {
+
+        margin-top: 4rem;
+        align-items: center;
+
+        .img-side {
+            img {
+                width: 90%;
+            }
+        }
+        .text-side {
+            .prop {
+                display: flex;
+                gap: 1rem;
+                li {
+                    list-style: none;
+                    font-family: $main-font;
+                    color: $yellow-brand;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                }
+            }
+            h1 {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                width: 65%;
+                line-height: 57px;
+                margin-top: 0.5rem;
+                letter-spacing: 0.02em;
+            }
+            .location {
+                display: flex;
+                gap: 0.5rem;
+
+                img {
+                    width: 15px;
+                    height: 20px;
+                    color: black;
+                }
+                p {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+            p {
+                font-family: $main-font;
+                color: $gray;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                width: 70%;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1750px) {
+    .project-details-section .all-content-prdt .text-side h1 {
+        width: 75%;
+    }
+    .project-details-section .all-content-prdt .text-side p {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .project-details-section .all-content-prdt .text-side h1 {
+        width: 90%;
+    }
+    .project-details-section .all-content-prdt .text-side p {
+        width: 90%;
+    }
+}

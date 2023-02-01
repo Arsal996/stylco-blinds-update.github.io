@@ -1,0 +1,1268 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+
+// color varialbes
+
+$light-grey: #e0e5e5;
+$black: #0f0f0f;
+$orange: #ff8600;
+$primary-blue: #476c9b;
+$white: #ffffff;
+$gray: #6b7680;
+$red: #f21b3f;
+$yellow-brand: #f9b11c;
+$pink: #e65f99;
+$purple: #551a8b;
+
+// font uses
+
+$main-font: "Gilroy", sans-serif;
+$heading-font: "Playfair Display", serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.all-navbar.fixed-nav {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    color: $black;
+}
+.home-header {
+    // background-image: url("/images/main-home-img.png");
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    padding: 0;
+
+    // main-content-form css
+
+    .main-content-form {
+        padding: 6rem 8%;
+
+        .text-btn-side {
+            h1 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 94px;
+                line-height: 95px;
+                font-family: "Gilroy" sans-serif;
+                /* or 101% */
+                width: 60%;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            h6 {
+                color: $white;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 31px;
+                margin-bottom: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                background-color: $white;
+                padding: 0.7rem 1rem;
+                width: 220px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $black;
+                    background-color: $yellow-brand;
+                }
+
+                i {
+                    margin-left: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .form-side {
+            // padding-left: 17rem;
+            display: flex;
+            justify-content: right;
+
+            form {
+                background-color: $white;
+                width: 40%;
+                border: 1px solid #ededed;
+                padding: 1rem 1rem;
+                padding-bottom: 0;
+                text-align: center;
+
+                h4 {
+                    color: $black;
+                    font-family: $heading-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding: 0 1rem;
+                    line-height: 21px;
+                }
+
+                span {
+                    color: $gray;
+                    padding: 0 1.5rem;
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 13px;
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+
+                .full-name,
+                .phone-zipcode {
+                    display: flex;
+                    gap: 0.4rem;
+                    margin-top: 0.5rem;
+
+                    input {
+                        width: 50%;
+                        height: 32px;
+                        border: 1px solid $light-grey;
+                        font-family: $main-font;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: $gray;
+                        padding: 0rem 0.5rem;
+                    }
+                }
+
+                .email {
+                    margin-top: 0.5rem;
+
+                    input {
+                        width: 100%;
+                        height: 32px;
+                        border: 1px solid $light-grey;
+                        font-family: $main-font;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: $gray;
+                        padding: 0rem 0.5rem;
+                    }
+                }
+
+                button {
+                    background-color: $yellow-brand;
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+                    border: none;
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 1rem;
+                    text-align: center;
+                }
+
+                p {
+                    display: flex;
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding: 1rem 2rem 0 2rem;
+
+                    span {
+                        color: $red;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .call-num {
+        background-color: $yellow-brand;
+        margin-top: 2rem;
+        justify-content: center;
+
+        .all-content {
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            .text {
+                text-align: center;
+
+                h4 {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    /* identical to box height */
+                    padding: 0;
+                    margin: 0;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    margin: 0;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+
+            .num {
+                margin-left: 2rem;
+
+                strong {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 60px;
+                    /* identical to box height, or 100% */
+
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+// company-details css
+
+.company-details {
+    background: #f8f8f8;
+
+    .heading-section {
+        padding: 4rem 8%;
+        align-items: center;
+
+        .text-side {
+            h2 {
+                font-family: $heading-font;
+                color: $black;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 53px;
+            }
+
+            p {
+                font-family: $main-font;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                width: 75%;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        .btn-side {
+            a {
+                text-decoration: none;
+                font-family: $main-font;
+                color: $black;
+                font-style: normal;
+                padding: 1rem 1.5rem;
+                background-color: $yellow-brand;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+            }
+        }
+    }
+
+    .details-section {
+        padding: 0 8%;
+        padding-bottom: 4rem;
+
+        .all-content-dt {
+            display: flex;
+
+            .img-section {
+                margin-right: 1rem;
+            }
+
+            .text-section {
+                width: 85%;
+
+                h6 {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    /* identical to box height */
+                    color: $black;
+                    font-feature-settings: "pnum" on, "lnum" on;
+                }
+
+                p {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    width: 85%;
+
+                    a {
+                        color: $yellow-brand;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// our latest products
+
+.our-products {
+    padding: 6rem 8%;
+
+    .op-heading {
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 53px;
+            text-align: center;
+            color: $black;
+            font-family: $heading-font;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            /* or 150% */
+            padding: 0 30rem;
+            color: $black;
+            font-family: $main-font;
+            text-align: center;
+        }
+    }
+
+    .all-images-content {
+        margin-top: 2rem;
+        padding: 0 0.7rem;
+
+        .op-content {
+            padding: 0;
+
+            .box {
+                position: relative;
+
+                img {
+                    width: 99%;
+                }
+
+                .text {
+                    position: absolute;
+                    bottom: 0.7rem;
+                    padding: 0 3rem 0 1.5rem;
+
+                    span {
+                        font-family: $main-font;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 34px;
+                        line-height: 41px;
+                        color: $white;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-family: $main-font;
+                        color: $white;
+                        margin-top: 0.5rem;
+                        // padding-right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .all-op-btn {
+        margin-top: 2.5rem;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            font-family: $main-font;
+            color: $black;
+            font-style: normal;
+            padding: 0.8rem 1.5rem;
+            background-color: $yellow-brand;
+            font-weight: 600;
+            font-size: 16px;
+            width: 220px;
+            text-align: center;
+            line-height: 19px;
+        }
+    }
+}
+
+// how its word section css
+
+.ht-work {
+    background: $black;
+
+    .all-content-ht {
+        padding: 4rem 6%;
+        padding-bottom: 0;
+
+        .consultation-form {
+            background-color: $white;
+            width: 70%;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
+            position: absolute;
+            margin-top: -2rem;
+            margin-left: 7rem;
+            // opacity: 0;
+            display: none;
+
+            .close-form {
+                cursor: pointer;
+                display: flex;
+                justify-content: right;
+                margin-top: -1.2rem;
+                margin-right: -1rem;
+            }
+            form {
+                text-align: center;
+                h4 {
+                    font-family: $heading-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 48px;
+                    /* identical to box height */
+                }
+                span {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-align: center;
+                    display: block;
+                    line-height: 21px;
+                }
+
+                .full-name,
+                .email-phone,
+                .zipcode-btn {
+                    display: flex;
+                    gap: 1rem;
+                    padding: 0 10%;
+                    margin-top: 1.5rem;
+
+                    input {
+                        width: 50%;
+                        height: 48px;
+                        font-family: $main-font;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 0 1rem;
+                        color: $black;
+                        border: 1px solid $black;
+                    }
+                    button {
+                        background-color: $yellow-brand;
+                        font-family: $main-font;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 18px;
+                        /* identical to box height */
+                        border: none;
+                        width: 50%;
+                        height: 50px;
+                        text-align: center;
+                    }
+                }
+                p {
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 13px;
+                    line-height: 21px;
+                    color: $black;
+                    margin-top: 2rem;
+        
+                    span {
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        .yt-video-side {
+            .video-content {
+                padding: 2rem 0 6rem 0;
+                border-right: 1px solid $light-grey;
+
+                iframe {
+                    width: 85%;
+                }
+
+                h4 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 50px;
+                    font-family: $heading-font;
+                    color: $white;
+                    padding: 1.5rem 0;
+                }
+
+                p {
+                    font-family: $main-font;
+                    color: $white;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-top: 1rem;
+                    width: 70%;
+                }
+
+                button {
+                    text-decoration: none;
+                    font-family: $main-font;
+                    color: $black;
+                    font-style: normal;
+                    padding: 0.8rem 1.5rem;
+                    background-color: $yellow-brand;
+                    font-weight: 600;
+                    font-size: 16px;
+                    width: 85%;
+                    display: block;
+                    text-align: center;
+                    line-height: 19px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .text-img-side {
+            padding: 4rem 0;
+
+            .ts-content {
+                margin-bottom: 3rem;
+
+                .ts-box {
+                    padding-left: 6rem;
+
+                    img {
+                        margin-bottom: 1rem;
+                    }
+                    .line {
+                        width: 80px;
+                        height: 1px;
+                        background-color: $light-grey;
+                        margin: 1.2rem 0;
+                    }
+                    h6 {
+                        font-family: $main-font;
+                        color: $white;
+                        font-style: normal;
+                        font-weight: 600;
+                        padding-right: 6rem;
+                        font-size: 19px;
+                        line-height: 25px;
+                    }
+                    p {
+                        font-family: $main-font;
+                        font-style: normal;
+                        font-weight: 500;
+                        width: 60%;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// latest-project css
+
+.latest-project {
+    padding: 6rem 8%;
+
+    .lt-heading {
+        h2 {
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            /* identical to box height, or 125% */
+            text-align: center;
+        }
+
+        p {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            line-height: 21px;
+        }
+    }
+
+    .all-images-content {
+        margin-top: 3rem;
+
+        .lt-content {
+            img {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            span {
+                color: $gray;
+                margin-right: 0.5rem;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+            }
+
+            strong {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 22px;
+                display: flex;
+                margin: 0.6rem 0 0.4rem 0;
+                align-items: center;
+            }
+
+            p {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .all-lt-btn {
+        margin-top: 2rem;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            font-family: $main-font;
+            color: $black;
+            font-style: normal;
+            padding: 0.8rem 1.5rem;
+            background-color: $yellow-brand;
+            font-weight: 600;
+            font-size: 16px;
+            width: 250px;
+            text-align: center;
+            line-height: 19px;
+        }
+    }
+}
+
+// contact-us-form css
+
+.contact-us-form {
+    background-image: url(/images/contact\ us\ bg\ 1.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    height: 100%;
+
+    .cu-heading {
+        text-align: center;
+        padding-top: 6rem;
+
+        h3 {
+            color: $white;
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 53px;
+        }
+
+        p {
+            color: $white;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+
+    form {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+        .full-name,
+        .email-phone,
+        .zipcode-btn {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+
+            input {
+                width: 50%;
+                background: none;
+                border: 1px solid $white;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: $white;
+                height: 50px;
+                padding: 0 1rem;
+            }
+
+            button {
+                background-color: $yellow-brand;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                /* identical to box height */
+                border: none;
+                width: 50%;
+                height: 50px;
+                text-align: center;
+            }
+        }
+
+        p {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            font-size: 13px;
+            line-height: 21px;
+            color: $white;
+            margin-top: 2rem;
+            padding-bottom: 4rem;
+
+            span {
+                color: red;
+            }
+        }
+    }
+}
+
+// latest-project css
+
+.latest-blogs {
+    padding: 6rem 8%;
+
+    .lb-heading {
+        h2 {
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            /* identical to box height, or 125% */
+            text-align: center;
+        }
+
+        p {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            line-height: 21px;
+        }
+    }
+
+    .all-images-content {
+        margin-top: 3rem;
+
+        .lb-content {
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            h6 {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 25px;
+                display: flex;
+                // margin: .4rem 0;
+                align-items: center;
+            }
+
+            p {
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                display: block;
+
+                i {
+                    color: $yellow-brand;
+                    margin-left: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .all-lt-btn {
+        margin-top: 2rem;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            font-family: $main-font;
+            color: $black;
+            font-style: normal;
+            padding: 0.8rem 1.5rem;
+            background-color: $yellow-brand;
+            font-weight: 600;
+            font-size: 16px;
+            width: 250px;
+            text-align: center;
+            line-height: 19px;
+        }
+    }
+}
+
+// sign up from
+
+.signup-form {
+    background-color: $black;
+    padding: 4rem 0;
+
+    .sf-heading {
+        text-align: center;
+
+        h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 53px;
+            color: $white;
+            font-family: $heading-font;
+        }
+
+        p {
+            font-family: $main-font;
+            color: $white;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .sf-form {
+        margin-top: 3rem;
+        width: 100%;
+
+        .form-data {
+            padding: 0;
+            form {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+
+                input {
+                    width: 20%;
+                    background: none;
+                    border: 1px solid $white;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $white;
+                    height: 50px;
+                    padding: 0 1rem;
+                }
+
+                button {
+                    background-color: $yellow-brand;
+                    font-family: $main-font;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                    /* identical to box height */
+                    border: none;
+                    width: 20%;
+                    height: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// media query css
+
+@media only screen and (max-width: 1650px) {
+    .home-header .main-content-form {
+        padding: 6rem 6%;
+    }
+    .home-header .main-content-form .text-btn-side h1 {
+        width: 70%;
+    }
+    .home-header .main-content-form .form-side form {
+        width: 50%;
+    }
+    .ht-work .all-content-ht .text-img-side .ts-content .ts-box p {
+        width: 80%;
+    }
+    .ht-work .all-content-ht .text-img-side .ts-content .ts-box h6 {
+        padding-right: 4rem;
+    }
+    .ht-work .all-content-ht .yt-video-side .video-content p {
+        width: 80%;
+    }
+    .company-details .heading-section {
+        padding: 4rem 6%;
+    }
+    .company-details .details-section {
+        padding: 0 6%;
+        padding-bottom: 4rem;
+    }
+    .our-products {
+        padding: 6rem 6%;
+    }
+    .our-products .op-heading p {
+        padding: 0 22rem;
+    }
+    .latest-project {
+        padding: 6rem 6%;
+    }
+    .contact-us-form form {
+        width: 50%;
+    }
+    .latest-blogs {
+        padding: 6rem 6%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .home-header .main-content-form .text-btn-side {
+        text-align: center;
+    }
+    .home-header .main-content-form .text-btn-side h1 {
+        width: 100%;
+    }
+    .home-header .main-content-form .form-side {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .our-products .op-heading p {
+        padding: 0 7rem;
+    }
+    .home-header .call-num .all-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .home-header .main-content-form {
+        padding: 3rem 3%;
+    }
+    .home-header .main-content-form .text-btn-side h1 {
+        width: 100%;
+        font-size: 44px;
+        line-height: 56px;
+    }
+    .home-header .main-content-form .text-btn-side h6 {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 1.5rem;
+        margin-top: 0rem;
+    }
+    .home-header .main-content-form .form-side form {
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .home-header .call-num .all-content .text h4 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .home-header .call-num .all-content .num strong {
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: 0.1em;
+        margin-left: -1.5rem;
+        text-transform: uppercase;
+    }
+    .company-details .heading-section {
+        padding: 2rem 4%;
+        text-align: center;
+    }
+    .company-details .heading-section .text-side h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .company-details .heading-section .text-side p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 0.7rem;
+    }
+    .company-details .details-section {
+        padding: 0 4%;
+        padding-bottom: 0rem;
+    }
+    .company-details .details-section .all-content-dt {
+        padding-left: 2rem;
+        margin-top: 1rem;
+    }
+    .company-details .details-section .all-content-dt .text-section h6 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .company-details .details-section .all-content-dt .text-section p {
+        font-size: 14px;
+        line-height: 21px;
+        width: 95%;
+    }
+    .company-details {
+        background: #f8f8f8;
+        padding-bottom: 3rem;
+    }
+    .our-products {
+        padding: 2rem 4%;
+    }
+    .our-products .op-heading h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .our-products .op-heading p {
+        padding: 0rem;
+    }
+    .our-products .all-images-content .op-content .box .text span {
+        font-size: 30px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .our-products .all-op-btn {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .ht-work .all-content-ht {
+        padding: 2rem 2%;
+        padding-bottom: 0;
+    }
+    .ht-work .all-content-ht .yt-video-side .video-content {
+        padding: 0rem;
+        border-right: 0;
+    }
+    .ht-work .all-content-ht .yt-video-side .video-content h4 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+        padding: 0 0 1rem 0;
+    }
+    .ht-work .all-content-ht .yt-video-side .video-content img {
+        width: 100%;
+    }
+    .ht-work .all-content-ht .yt-video-side .video-content a {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .ht-work .all-content-ht .text-img-side .ts-content .ts-box {
+        padding-left: 4rem;
+    }
+    .ht-work .all-content-ht .text-img-side {
+        padding: 2.5rem 0;
+    }
+    .ht-work .all-content-ht .text-img-side .ts-content .ts-box h6 {
+        padding-right: 4rem;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .ht-work .all-content-ht .text-img-side .ts-content {
+        margin-bottom: 0.2rem;
+    }
+    .latest-project {
+        padding: 2rem 4%;
+    }
+    .latest-project .lt-heading h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .latest-project .all-images-content {
+        margin-top: 1.5rem;
+    }
+    .latest-project .all-images-content .lt-content strong {
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        margin: 0.5rem 0 0.35rem 0;
+        align-items: center;
+    }
+    .latest-project .all-lt-btn {
+        margin-top: 1rem;
+    }
+    .contact-us-form .cu-heading {
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .contact-us-form .cu-heading h3 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .contact-us-form .cu-heading p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contact-us-form form {
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+    .contact-us-form form .full-name,
+    .contact-us-form form .email-phone,
+    .contact-us-form form .zipcode-btn {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .contact-us-form form .full-name input,
+    .contact-us-form form .email-phone input,
+    .contact-us-form form .zipcode-btn input {
+        line-height: 16px;
+        color: #ffffff;
+        height: 42px;
+        padding: 0 0.7rem;
+    }
+    .contact-us-form form .zipcode-btn button {
+        height: 42px;
+        text-align: center;
+    }
+    .latest-blogs {
+        padding: 2rem 4%;
+    }
+    .latest-blogs .lb-heading h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .latest-blogs .all-images-content {
+        margin-top: 1.5rem;
+    }
+    .latest-blogs .all-images-content .lb-content p {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    .latest-blogs .all-images-content .lb-content img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .latest-blogs .all-images-content .lb-content {
+        margin-top: 1rem;
+    }
+    .signup-form {
+        background-color: #0f0f0f;
+        padding: 3rem 0;
+    }
+    .signup-form .sf-heading h3 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .signup-form .sf-heading p {
+        padding: 0 1rem;
+    }
+    .signup-form .sf-form {
+        margin-top: 1.5rem;
+    }
+    .signup-form .sf-form .form-data form input {
+        width: 45%;
+        height: 42px;
+        padding: 0 0.5rem;
+    }
+    .signup-form .sf-form .form-data form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding-left: 1.4rem;
+    }
+    .signup-form .sf-form .form-data form button {
+        width: 45%;
+        height: 42px;
+        text-align: center;
+    }
+}

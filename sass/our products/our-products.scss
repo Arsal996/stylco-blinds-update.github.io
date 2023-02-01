@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+
+// color varialbes
+
+$light-grey: #e0e5e5;
+$black: #0f0f0f;
+$orange: #ff8600;
+$primary-blue: #476c9b;
+$white: #ffffff;
+$gray: #6b7680;
+$red: #f21b3f;
+$yellow-brand: #f9b11c;
+$pink: #e65f99;
+$purple: #551a8b;
+
+// font uses
+
+$main-font: "Gilroy", sans-serif;
+$heading-font: "Playfair Display", serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.opd-main-section {
+    background-size: contain;
+    height: 100%;
+    padding-bottom: 10rem;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+
+    .opd-heading {
+        padding: 9rem 0 0 6%;
+        h1 {
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 64px;
+            /* identical to box height */
+            color: $white;
+            letter-spacing: 0.02em;
+        }
+        p {
+            font-family: $main-font;
+            color: $white;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            width: 40%;
+            line-height: 21px;
+        }
+    }
+}
+
+// filters-search css
+
+.filters-search {
+    //  margin-top: 2rem;
+
+    .all-filters-opd {
+        padding: 2rem 8%;
+        margin-bottom: -5rem;
+
+        .filters-opd,
+        .search-opd {
+            border-bottom: 1px solid $light-grey;
+            padding-bottom: 1rem;
+            select {
+                width: 100%;
+                height: 45px;
+                background-color: $white;
+                border: 1px solid $light-grey;
+                padding: 0 0.5rem;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-family: $main-font;
+                // border: none;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+            }
+            input {
+                width: 100%;
+                height: 45px;
+                border: none;
+                padding: 0 0.5rem;
+                font-family: $main-font;
+                background: #f4f4f4;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+// discovered by categories css
+
+.our-products {
+    .disc-heading {
+        align-items: center;
+        .text-side {
+
+            h2{
+                font-family: $main-font;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+        }
+        .btn-side {
+            display: flex;
+            justify-content: right;
+
+            a {
+                font-family: $main-font;
+                text-decoration: none;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+
+                i {
+                    color: $yellow-brand;
+                    font-size: 1rem;
+                    margin-left: 0.4rem;
+                }
+            }
+        }
+    }
+}
+
+// discovered by featured css
+
+.dicovered-feature {
+    padding: 0 8%;
+    margin-bottom: 2rem;
+
+    .df-heading {
+        align-items: center;
+
+        .text-side {
+            h2{
+                font-family: $main-font;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+        .btn-side {
+            display: flex;
+            justify-content: right;
+
+            a {
+                font-family: $main-font;
+                text-decoration: none;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+
+                i {
+                    color: $yellow-brand;
+                    font-size: 1rem;
+                    margin-left: 0.4rem;
+                }
+            }
+        }
+    }
+
+    .ft-images {
+        margin-top: 1rem;
+
+        .ft-img {
+            position: relative;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                p {
+                    position: absolute;
+                    bottom: .5rem;
+                    left: 2rem;
+                    font-family: $main-font;
+                    color: $white;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+}
+
+// discovered by need css
+
+.dicovered-need {
+    padding: 4rem 8%;
+    margin-bottom: 2rem;
+
+    .dn-heading {
+        align-items: center;
+
+        .text-side {
+            font-family: $main-font;
+            color: $black;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .btn-side {
+            display: flex;
+            justify-content: right;
+
+            a {
+                font-family: $main-font;
+                text-decoration: none;
+                color: $black;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+
+                i {
+                    color: $yellow-brand;
+                    font-size: 1rem;
+                    margin-left: 0.4rem;
+                }
+            }
+        }
+    }
+
+    .ft-images {
+        margin-top: 1rem;
+
+        .ft-img {
+            position: relative;
+
+            .sub-ft-images{
+               margin-bottom: 2rem;
+                .sub-ft-img{
+                    position: relative;
+
+                    a{
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        p {
+                            position: absolute;
+                            bottom: .5rem;
+                            left: 2rem;
+                            font-family: $main-font;
+                            color: $white;
+                            text-decoration: none;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 29px;
+                        }
+                    }
+                }
+            }
+            a {
+                img {
+                    width: 100%;
+                    height: 96.5%;
+                }
+                p {
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 2rem;
+                    font-family: $main-font;
+                    color: $white;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .opd-main-section {
+        background-size: 100% 100%;
+        padding-bottom: 4rem;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 20%);
+    }
+    .opd-main-section .opd-heading {
+        padding: 4rem 0 0 6%;
+    }
+    .opd-main-section .opd-heading h1 {
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .opd-main-section .opd-heading p {
+        font-size: 16px;
+        width: 90%;
+        line-height: 20px;
+    }
+    .filters-search .all-filters-opd {
+        padding: 2rem 4%;
+        margin-bottom: -2rem;
+    }
+    .filters-search .all-filters-opd .filters-opd, .filters-search .all-filters-opd .search-opd {
+        border-bottom: 0;
+        padding-bottom: 1rem;
+    }
+    .our-products .disc-heading .text-side h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .dicovered-feature .df-heading .text-side h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .dicovered-feature .ft-images .ft-img {
+        position: relative;
+        margin-top: 1rem;
+        padding: 0;
+    }
+    .dicovered-need {
+        padding: 1rem 4%;
+        margin-bottom: 2rem;
+    }
+    .dicovered-need .ft-images .ft-img .sub-ft-images .sub-ft-img {
+        position: relative;
+        margin-top: 1rem;
+    }
+    .dicovered-need .ft-images .ft-img .sub-ft-images {
+        margin-bottom: 1rem;
+    }
+    .dicovered-need .ft-images .ft-img a p {
+        position: absolute;
+        bottom: 1rem;
+        left: 1.5rem;
+    }
+    .dicovered-need .ft-images .ft-img a img {
+        width: 100%;
+        height: 100%;
+    }
+    .dicovered-feature .ft-images .ft-img a p {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+    }
+}

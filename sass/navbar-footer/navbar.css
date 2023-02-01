@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.all-navbar.fixed-nav {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #0f0f0f;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+.all-navbar .mbl-menu-btn {
+  position: absolute;
+  top: 1.7rem;
+  left: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.all-navbar .mbl-menu-btn i {
+  font-size: 2rem;
+}
+.all-navbar .mbl-logo {
+  position: absolute;
+  z-index: 12;
+  top: 1.7rem;
+  left: 5rem;
+  display: none;
+}
+.all-navbar .mbl-logo img {
+  width: 90%;
+}
+.all-navbar .main-nav .close-nav {
+  position: absolute;
+  top: 1.7rem;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.all-navbar .main-nav .close-nav i {
+  font-size: 2rem;
+}
+.all-navbar .main-nav .top-nav {
+  padding: 1rem 6%;
+  align-items: center;
+  border-bottom: 1px solid #e0e5e5;
+}
+.all-navbar .main-nav .top-nav .top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-top: 1rem;
+}
+.all-navbar .main-nav .top-nav .top-menu ul {
+  display: flex;
+}
+.all-navbar .main-nav .top-nav .top-menu ul li {
+  list-style: none;
+  padding: 0rem 2rem;
+}
+.all-navbar .main-nav .top-nav .top-menu ul li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0f0f0f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .main-nav .top-nav .top-menu ul li a:hover {
+  color: #f9b11c;
+}
+.all-navbar .main-nav .top-nav .top-menu .phone {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1rem 2rem;
+}
+.all-navbar .main-nav .top-nav .top-menu .phone img {
+  width: 15px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.all-navbar .main-nav .top-nav .top-menu .phone li {
+  list-style: none;
+  padding: 0;
+}
+.all-navbar .main-nav .top-nav .top-menu .phone li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0f0f0f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  pointer-events: none;
+}
+.all-navbar .main-nav .top-nav .top-menu .fd-location {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1rem 2rem;
+}
+.all-navbar .main-nav .top-nav .top-menu .fd-location img {
+  width: 15px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.all-navbar .main-nav .top-nav .top-menu .fd-location li {
+  list-style: none;
+  padding: 0;
+}
+.all-navbar .main-nav .top-nav .top-menu .fd-location li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0f0f0f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .main-nav .top-nav .top-menu .fd-location li a:hover {
+  color: #f9b11c;
+}
+.all-navbar .main-nav .sub-menu {
+  border-bottom: 1px solid #e0e5e5;
+}
+.all-navbar .main-nav .sub-menu .menu-list {
+  padding: 1rem 10% 0 0;
+  display: flex;
+  justify-content: right;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul {
+  display: flex;
+  align-items: center;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul li {
+  list-style: none;
+  padding: 0 2rem;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul li a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0f0f0f;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul li a:hover {
+  color: #f9b11c;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul button {
+  margin-left: 3rem;
+  padding: 0.4rem 1rem;
+  background-color: #f9b11c;
+  border: none;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul button a {
+  border-radius: 1px;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-family: "Gilroy", sans-serif;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon {
+  margin-left: 2rem;
+  cursor: pointer;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon:hover i {
+  color: #f9b11c;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon:hover .sr-input {
+  opacity: 1;
+  pointer-events: auto;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon .sr-input {
+  position: absolute;
+  right: 2rem;
+  top: 4.6rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon .sr-input input {
+  padding: 0.2rem 0.4rem;
+  font-family: "Gilroy", sans-serif;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #e0e5e5;
+  border-radius: 2px;
+}
+.all-navbar .main-nav .sub-menu .menu-list ul .search-icon i {
+  text-decoration: none;
+  color: #0f0f0f;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.all-navbar .top-nav .top-menu ul li .links-clr {
+  color: #0f0f0f;
+}
+
+@media only screen and (max-width: 1650px) {
+  .all-navbar .main-nav .top-nav {
+    padding: 1rem 4%;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list {
+    padding: 1rem 8% 0 0;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .all-navbar .main-nav .close-nav {
+    display: block;
+  }
+  .all-navbar .mbl-menu-btn {
+    display: block;
+  }
+  .all-navbar .mbl-logo {
+    display: block;
+  }
+  .all-navbar {
+    height: 90px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+  }
+  .all-navbar .main-nav .top-nav .logo {
+    padding: 1rem;
+  }
+  .all-navbar .main-nav .top-nav {
+    padding: 0;
+    border-bottom: 0;
+  }
+  .all-navbar .main-nav {
+    position: absolute;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 999;
+    margin-left: -40rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .all-navbar .active-nav {
+    margin-left: 0;
+    position: absolute;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 999;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+  }
+  .all-navbar .main-nav .sub-menu {
+    border-bottom: 0;
+  }
+  .all-navbar .main-nav .top-nav .top-menu ul {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    align-items: flex-start;
+    margin-top: 5rem;
+    padding-left: 0.48rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .phone {
+    position: fixed;
+    top: 2rem;
+    right: 13rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .fd-location {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    margin: 0 1rem 1rem 2rem;
+  }
+  .all-navbar .main-nav .top-nav .logo img {
+    margin-left: 2rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu ul {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    margin-top: 6rem;
+    padding-left: 0.5rem;
+    position: absolute;
+  }
+  .all-navbar .main-nav .top-nav .top-menu ul li {
+    list-style: none;
+    padding: 0.4rem 2rem;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul button {
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul .search-icon {
+    margin-left: 2rem;
+    margin-top: 1.4rem;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul li {
+    padding: 0.4rem 2rem;
+  }
+}
+@media only screen and (max-width: 676px) {
+  .all-navbar .active-nav {
+    width: 70%;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .phone {
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .fd-location {
+    position: fixed;
+    top: 1.2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .all-navbar .mbl-menu-btn {
+    position: absolute;
+    top: 1.55rem;
+    left: 1.2rem;
+    cursor: pointer;
+  }
+  .all-navbar .mbl-logo {
+    position: absolute;
+    z-index: 12;
+    top: 1.55rem;
+    left: 3.5rem;
+  }
+  .all-navbar .mbl-logo img {
+    width: 80%;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .fd-location li a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .phone li a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+    pointer-events: none;
+  }
+  .all-navbar {
+    height: 80px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .fd-location {
+    position: absolute;
+    top: 1rem;
+    right: -53rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .phone {
+    position: absolute;
+    top: 2.6rem;
+    right: -53rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .fd-location img {
+    width: 12px;
+    height: 16px;
+    margin-right: 0.3rem;
+  }
+  .all-navbar .main-nav .top-nav .top-menu .phone img {
+    width: 12px;
+    height: 16px;
+    margin-right: 0.3rem;
+  }
+  .all-navbar .mbl-menu-btn i {
+    font-size: 1.7rem;
+  }
+  .all-navbar .active-nav {
+    width: 85%;
+    height: 101vh;
+  }
+  .all-navbar .main-nav .close-nav {
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+  }
+  .all-navbar .main-nav .close-nav i {
+    font-size: 1.7rem;
+  }
+  .all-navbar .main-nav .top-nav .logo img {
+    margin-left: 1.5rem;
+    width: 60%;
+  }
+  .all-navbar .main-nav .top-nav .top-menu ul {
+    padding-left: 0rem;
+  }
+  .all-navbar .main-nav .sub-menu .menu-list ul {
+    padding-left: 0rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

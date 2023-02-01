@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Questrial&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.our-projects {
+  padding: 6rem 8%;
+}
+.our-projects .heading-selct-menu {
+  align-items: center;
+}
+.our-projects .heading-selct-menu .op-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+.our-projects .heading-selct-menu .op-heading p {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.our-projects .heading-selct-menu .sorting {
+  display: flex;
+  justify-content: right;
+}
+.our-projects .heading-selct-menu .sorting .custom-select select {
+  width: 240px;
+  height: 45px;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E5E5;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+.our-projects .all-images-content {
+  margin-top: 6rem;
+}
+.our-projects .all-images-content .op-content img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.our-projects .all-images-content .op-content img:hover {
+  transform: scale(1.05);
+}
+.our-projects .all-images-content .op-content span {
+  color: #6B7680;
+  margin-right: 0.5rem;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.our-projects .all-images-content .op-content strong {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  display: flex;
+  margin: 0.6rem 0 0.4rem 0;
+  align-items: center;
+}
+.our-projects .all-images-content .op-content p {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.our-projects .all-lt-btn {
+  margin-top: 2rem;
+  justify-content: center;
+}
+.our-projects .all-lt-btn a {
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #0F0F0F;
+  font-style: normal;
+  padding: 0.8rem 1.5rem;
+  background-color: #F9B11C;
+  font-weight: 600;
+  font-size: 16px;
+  width: 250px;
+  text-align: center;
+  line-height: 19px;
+}
+
+@media only screen and (max-width: 1650px) {
+  .our-projects {
+    padding: 6rem 8%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .our-projects {
+    padding: 2rem 4%;
+  }
+  .our-projects .heading-selct-menu .op-heading h2 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .our-projects .heading-selct-menu .op-heading p {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .our-projects .heading-selct-menu .sorting .custom-select select {
+    width: 140px;
+    height: 40px;
+    margin-top: 1.5rem;
+  }
+  .our-projects .all-images-content {
+    margin-top: 0.7rem;
+  }
+  .our-projects .all-images-content .op-content strong {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0.5rem 0 0.3rem 0;
+  }
+  .our-projects .all-images-content .op-content img {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}/*# sourceMappingURL=all-projects.css.map */
