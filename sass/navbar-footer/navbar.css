@@ -369,12 +369,12 @@ body {
   }
   .all-navbar .main-nav .top-nav .top-menu .fd-location li a {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 17px;
   }
   .all-navbar .main-nav .top-nav .top-menu .phone li a {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 17px;
     pointer-events: none;
   }
@@ -387,12 +387,12 @@ body {
   .all-navbar .main-nav .top-nav .top-menu .fd-location {
     position: absolute;
     top: 1rem;
-    right: -53rem;
+    right: -52rem;
   }
   .all-navbar .main-nav .top-nav .top-menu .phone {
     position: absolute;
     top: 2.6rem;
-    right: -53rem;
+    right: -52rem;
   }
   .all-navbar .main-nav .top-nav .top-menu .fd-location img {
     width: 12px;
