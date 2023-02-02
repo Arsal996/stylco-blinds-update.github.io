@@ -3,7 +3,7 @@ let menuClr = document.querySelector('a')
 
 window.onscroll = () => {
 
-    if (window.scrollY > 50) {
+    if (window.scrollY > 20) {
         navbar.classList.add("fixed-nav");
         menuClr.classList.add("links-clr")
         bookFrom.style.display = "none";
