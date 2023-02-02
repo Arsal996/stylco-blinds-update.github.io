@@ -6,6 +6,8 @@ window.onscroll = () => {
     if (window.scrollY > 50) {
         navbar.classList.add("fixed-nav");
         menuClr.classList.add("links-clr")
+        bookFrom.style.display = "none";
+        mainNav.classList.remove('active-nav')
     }
     else {
        navbar.classList.remove("fixed-nav");
@@ -24,7 +26,6 @@ let closeNav = document.querySelector('.close-nav')
     mainNav.classList.remove('active-nav')
 }
 
-
 let formBtn = document.querySelector('.booking-form-btn');
 let bookFrom = document.querySelector('.consultation-form');
 let closeFrom = document.querySelector('.close-form')
@@ -37,13 +38,6 @@ let closeFrom = document.querySelector('.close-form')
      bookFrom.style.display = "none"
  })
 
-//  window.onclick = ()=>{
-//     bookFrom.style.display = "none"
-//  }
+var swiper = new Swiper(".mySwiper", {});
 
-  
-// const menuClr = document.querySelector('.links');
 
-// window.addEventListener("scroll", function () {
-//     menuClr.classList.add("links-clr", window.scrollY > 50);
-// });
