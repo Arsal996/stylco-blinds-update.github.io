@@ -1,5 +1,4 @@
 let navbar = document.querySelector('.all-navbar');
-let menuClr = document.querySelector('a')
 
 window.onscroll = () => {
 
